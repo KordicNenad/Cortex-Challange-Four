@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #282522;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#main-header {
+  background-color: #1b1818;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+#logo {
+  color: rgb(223, 162, 48);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+#main-header ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+#main-header li {
+  margin: 0 1rem;
+}
+
+#main-header nav a {
+  color: rgb(223, 162, 48);
+  font-size: 1.25rem;
+}
+
+#main-header nav a:hover {
+  color: rgb(255, 202, 104);
+}
+
+#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: #1b1818;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer header {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 5%;
+}
+
+#side-drawer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 1rem;
+}
+
+#side-drawer li {
+  margin: 1rem 0;
+}
+
+#side-drawer a {
+  color: white;
+  font-size: 2rem;
+}
+
+/* header end */
+
+main {
+  width: 80%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+main h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #f59e44;
+  margin: 0 auto 72px auto;
+  text-shadow: 1px 1px 2px black;
+}
+
+#latest-products ul {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  
+}
+
+.food-items img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  margin: 0 0 1rem 0;
+}
+
+.food-items h2 {
+  margin: 0 0 1rem 0;
+}
+
+article {
+    background-color: bisque;
+    border-radius: 6px;
+    overflow: hidden;
+    padding-bottom: 0.5rem;
+    height: 100%;
+}
+
+.btn {
+    background-color: #f59e44;
+    border-radius: 5px;
+    color: white;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn:hover {
+    background-color: #ffb96e;
+}
+
+@media (max-width: 48rem) {
+
+  #main-header nav a {
+    display: none;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  #latest-products ul {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+
+}
